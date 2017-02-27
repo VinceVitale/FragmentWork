@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FragmentWork</string>
+    <string name="activityMain">Activity Main</string>
+    <string name="fragmentOne">Fragment One</string>
+    <string name="fragmentTwo">Fragment Two</string>
+    <!--<string name=""></string>-->
+</resources>
