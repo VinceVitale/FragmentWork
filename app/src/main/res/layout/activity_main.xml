@@ -16,6 +16,7 @@
         <Button
             android:text="@string/fragmentOne"
             android:layout_weight="2"
+            style=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="FragmentOneClick"
@@ -24,6 +25,7 @@
         <Button
             android:text="@string/fragmentTwo"
             android:layout_weight="2"
+            style=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="FragmentTwoClick"
