@@ -3,5 +3,7 @@
     <string name="activityMain">Activity Main</string>
     <string name="fragmentOne">Fragment One</string>
     <string name="fragmentTwo">Fragment Two</string>
+    <string name="listViewHeader">Listing of Web Pages</string>
+    <string name="detail_heading">Web Page</string>
     <!--<string name=""></string>-->
 </resources>

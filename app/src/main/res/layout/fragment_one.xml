@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
     android:orientation="vertical"
     tools:context=".FragmentOne">
 
-    <TableRow
-        android:id="@+id/topRow"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:text="@string/fragmentOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/black" />
 
-        <Button
-            android:text="@string/fragmentOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="FragmentOneClick"
-            android:id="@+id/buttonFragmentOne" />
-
-        <Button
-            android:text="@string/fragmentTwo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="FragmentTwoClick"
-            android:id="@+id/buttonFragmentTwo" />
-
-        <TextView
-            android:text="@string/fragmentOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:textColor="@android:color/black" />
-    </TableRow>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/fragment_container">
-    </FrameLayout>
-
-</TableLayout>
+</LinearLayout>

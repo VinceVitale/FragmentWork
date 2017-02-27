@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
     tools:context="com.vincevitale.fragmentwork.MainActivity">
 
-    <TableRow
-        android:id="@+id/topRow"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
 
         <Button
             android:text="@string/fragmentOne"
+            android:layout_weight="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="FragmentOneClick"
@@ -21,18 +23,12 @@
 
         <Button
             android:text="@string/fragmentTwo"
+            android:layout_weight="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="FragmentTwoClick"
             android:id="@+id/buttonFragmentTwo" />
-
-        <TextView
-            android:text="@string/activityMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:textColor="@android:color/black" />
-    </TableRow>
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -40,4 +36,10 @@
         android:id="@+id/fragment_container">
     </FrameLayout>
 
-</TableLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fragment_list_container">
+    </FrameLayout>
+
+</LinearLayout>
